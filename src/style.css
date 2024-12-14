@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components{
+  .time {
+    @apply relative font-semibold min-w-[60px] sm:min-w-[82px];
+  }
+  .label-count {
+    @apply text-xs sm:text-sm w-full absolute bottom-0 tracking-widest font-light;
+  }
+}
+
+.text-shadow-md {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel__prev,
+.carousel__next,
+.carousel__prev:hover,
+.carousel__next:hover{
+  color: white;
+}
